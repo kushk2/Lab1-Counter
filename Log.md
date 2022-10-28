@@ -20,5 +20,12 @@ note: command+shift+v for Preview
 # Tuesday 25th October 
 
 - Connected with different vbuddy and different adapter
-- connected to vbuddy and counter worked
+- connected to vbuddy (self test was on) and counter worked
 
+# Friday 28th October
+
+- Broke the vbuddy
+- Task2 Counter working and enable flag working (counter_tb.cpp)
+- Task2 Challenge completed and counting up and down working
+- Started Task3, single shot worked, vbdValue() found to get val of rot encoder, code incomplete though
+-
