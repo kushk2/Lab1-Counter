@@ -17,3 +17,8 @@ note: command+shift+v for Preview
 - ran doit.sh for modified code
 - couldn't get anything other than the self test options to come up on the Vbuddy, no impact on the 7sig test nor when plotting - said connected via port but this didnt change when disconnected and reconnected
 
+# Tuesday 25th October 
+
+- Connected with different vbuddy and different adapter
+- connected to vbuddy and counter worked
+

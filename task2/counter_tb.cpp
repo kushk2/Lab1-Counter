@@ -36,13 +36,21 @@ int main(int argc, char **argv, char **env){
         }
 
         //Send count value to VBuddy
-        vbdPlot(int(top->count), 0, 255);
+        vbdHex(4, (int(top->count) >> 16) & 0xF);
+        vbdHex(3, (int(top->count) >> 8) & 0xF);
+        vbdHex(2, (int(top->count) >> 4) & 0xF);
+        vbdHex(1, int(top->count) & 0xF);
         vbdCycle(i+1);
-        // end of Vbuddy output section
+        // // end of Vbuddy output section
+
+        //plot count value on VBuddy
+        // vbdPlot(int(top->count), 0, 255);
+        // vbdCycle(i+1);
+        //end plot
 
         //change input stimuli
         top->rst = (i < 2) | (i ==15);
-        //top->en = vbdFlag();
+        top->en = vbdFlag();
         if(Verilated::gotFinish()) exit(0);
     }
     vbdClose();
